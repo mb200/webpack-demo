@@ -1,0 +1,33 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #011627;
+  color: #d6deeb;
+}
+
+.container {
+  margin: 20px;
+  > .hero {
+    margin: 0px auto;
+    text-align: center;
+
+    > svg {
+      width: 140px;
+      animation-name: spin;
+      animation-duration: 400ms;
+      animation-timing-function: ease-in;
+    }
+
+    > h2 {
+      font-weight: 500;
+    }
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: scale(0.75);
+  }
+  to {
+    transform: scale(1);
+  }
+}
